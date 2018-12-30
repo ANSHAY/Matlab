@@ -1,0 +1,10 @@
+
+s=0
+while(1)
+    clc;
+    r = floor(100*rand(1))
+    s=s+r;
+    keyboard
+    delay
+end
+s

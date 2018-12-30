@@ -1,0 +1,8 @@
+recObj = audiorecorder(44100, 16, 2);
+get(recObj)
+i=0
+record(recObj)
+while i<10000
+     i+=
+end
+stop(recObj)

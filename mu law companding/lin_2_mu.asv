@@ -1,0 +1,13 @@
+clc;
+linn = audiorecorder();
+record(linn);
+input('kuchh bolo n fir likho rokne ke liye....');
+stop(linn);
+lin = getaudiodata(linn);
+mu = lin;
+lin2mu(mu);
+input('lin play...');
+play(linn);
+input('mu play...');
+play(mu);
+delete(linn);

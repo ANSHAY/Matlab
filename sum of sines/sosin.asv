@@ -1,0 +1,11 @@
+clear;
+clc;
+f=[10 20 30 40 50]/10;
+t = (0:0.01:10);
+O = f'*t;
+x = sin(2*pi*O);
+y = sum(x);
+figure, plot(t,x);
+figure, plot(t,y);
+z = fft(y);
+figure, plot(abs(z));
