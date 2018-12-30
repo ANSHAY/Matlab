@@ -1,0 +1,16 @@
+function Electrifield (W)   
+c = 3e+8;
+x = -10 : 0.001 : 10 ;
+t = -10 : 0.001 : 10 ;
+
+Bx = B * x;
+Wt = W * t;
+[BX,WT] = meshgrid(Bx,Wt);
+E = cos(WT + BX);
+%surf(x,t,E);
+%axis square;
+xlabel('X');
+ylabel('t');
+zlabel('E');
+grid on
+end

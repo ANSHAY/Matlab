@@ -1,0 +1,17 @@
+function plotSin(f1,f2)
+    x=linspace(0,2*pi,f1*16+1);
+if nargin == 1
+    z=sin(f1*x);
+    plot(x,z,'--sr',...
+            'LineWidth',2,...
+            'MarkerFaceColor','k',...
+            'MarkerEdgeColor','r')
+elseif nargin == 2
+    [X,Y]=meshgrid(x,y);
+    Z=sin(f1*X)+sin(f2*Y);
+    imagesc(Z);
+    colorbar;
+    colormap(hot);
+    axes xy;
+    subplot(2,1,2)
+end
